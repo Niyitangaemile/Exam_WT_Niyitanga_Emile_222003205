@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!-- NIYITANGA Emile 222003205-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suppliers Panel</title>
+</head>
+<body>
+    <h1>suppliers Panel</h1>
+    
+    <!-- suppliersRegistration Form -->
+    <h2>Create supplier</h2>
+    <form method="post" action="landingsuppliers.php">
+       <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label for="contact_person">contact_person:</label><br>
+        <input type="text" name="contact_person" required><br>
+        <label for="email">email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="number" name="phone_number" required><br>
+        <label for="address">address:</label><br>
+        <input type="text" name="address" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User suppliers</h2>
+     <form method="post" action="landingsuppliers.php">
+                    <input type="number" name="supplier_id" placeholder=" New supplier_id">
+                    <input type="text" name="newname" placeholder="New name">
+                    <input type="text" name="newcontact_person" placeholder="New contact_person">
+                    <input type="email" name="newemail" placeholder="New email">
+                    <input type="number" name="newphone_number" placeholder="New phone Number">
+                    <input type="text" name="newaddress" placeholder="New address">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

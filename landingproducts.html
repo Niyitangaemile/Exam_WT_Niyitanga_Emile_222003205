@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- NIYITANGA Emile 222003205-->
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products Panel</title>
+</head>
+<body>
+    <h1>products Panel</h1>
+    
+    <!-- products Registration Form -->
+    <h2>Create products</h2>
+    <form method="post" action="landingproducts.php">
+        
+       <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label for="description">description:</label><br>
+        <input type="text" name="description" required><br>
+        <label for="category">category:</label><br>
+        <input type="text" name="category" required><br>
+        <label for="price">price:</label><br>
+        <input type="number" name="price" required><br>
+        <label for="material">material:</label><br>
+        <input type="text" name="material" required><br>
+        <label for="image_url">Date of Birth:</label><br>
+        <input type="text" name="image_url" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User products </h2>
+     <form method="post" action="landingproducts.php">
+                    <input type="number" name="product_id" placeholder=" New product_id"><br>
+                    <input type="text" name="newname" placeholder="New name"><br>
+                    <input type="text" name="newdescription" placeholder="New description"><br>
+                    <input type="text" name="newcategory" placeholder="New category"><br>
+                    <input type="number" name="newprice" placeholder="New price"><br>
+                    <input type="text" name="newmaterial" placeholder="New material"><br>
+                    <input type="text" name="newimage_url" placeholder="New image_url"><br>
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

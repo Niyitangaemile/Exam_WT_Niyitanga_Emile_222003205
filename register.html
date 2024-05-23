@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- NIYITANGA Emile 222003205-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users Form</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<style>
+
+    body {
+      background-image: url('photo/babyss.jpg');
+      background-size: cover; /* Cover the entire background */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Prevent the background image from repeating */
+    }
+    
+    h1 {
+      color: orange; /* Change the color of the h1 heading to blue */
+    }
+
+    p {
+      font-size: 2rem; /* Increase the font size of the paragraph */
+    }
+  </style>
+    <div style="display: flex; align-items: center;">
+        <img src="./photo/kids cloth.jpg" width="100" height="80" alt="Logo">
+        emile 222007495 . WEB TECHNOLOGY UR
+    </div>
+
+    <button class="back-button" onclick="window.location.href='dashboardusers.html'">BACK</button>
+      
+<link rel="stylesheet" href="css/master.css">
+<script type="text/javascript">
+    alert("hello users you can now create account or register!")
+        
+    </script>
+
+      <center>
+
+    <h1>users FORM</h1>
+    <!-- NIYITANGA Emile 222003205-->
+    <h2>Create users</h2>
+    <form id="usersForm" method="post" action="landing.php" onsubmit="return validateForm()">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <label for="role">Role:</label><br>
+        <input type="text" id="role" name="role" required><br>
+        <button type="submit" id="create-button" name="create">Create</button>
+
+    </form></center>
+    <script type="text/javascript" src="scriptfirst.js"></script>
+</body>
+</html>

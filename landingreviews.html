@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- NIYITANGA Emile 222003205-->
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reviews Panel</title>
+</head>
+<body>
+    <h1>reviews Panel</h1>
+    
+    <!-- reviews Registration Form -->
+    <h2>Create reviews</h2>
+    <form method="post" action="landingreviews.php">
+         <label for="product_id ">product_id:</label><br>
+        <input type="number" name="product_id" required><br>
+        <label for="customer_id">customer_id:</label><br>
+        <input type="number" name="customer_id" required><br>
+        <label for="rating">rating:</label><br>
+        <input type="number" name="rating" required><br>
+        <label for="review_text">review_text:</label><br>
+        <input type="text" name="review_text" required><br>
+        <label for="review_date">review_date:</label><br>
+        <input type="date" name="review_date" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User reviews </h2>
+     <form method="post" action="landingreviews.php">
+                    <input type="number" name="review_id" placeholder=" New review_id">
+                    <input type="text" name="newproduct_id" placeholder="New product_id">
+                    <input type="number" name="newcustomer_id" placeholder="New customer_id">
+                    <input type="text" name="newrating" placeholder="New rating">
+                    <input type="text" name="newreview_text" placeholder="New review_text">
+                    <input type="date" name="newreview_date" placeholder="New review_date">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+</form>
+</body>
+</html>

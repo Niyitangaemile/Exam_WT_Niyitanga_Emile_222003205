@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- NIYITANGA Emile 222003205-->
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+    <title>orders page</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>orders page</h1>
+    
+    <!-- orders Registration Form -->
+    <h2>Create orders</h2>
+    <form method="post" action="landingorders.php">
+         <label for="customer_id">customer_id:</label><br>
+        <input type="number" name="customer_id" required><br>
+        <label for="order_date">order_date:</label><br>
+        <input type="date" name="order_date" required><br>
+        <label for="total_price">total_price:</label><br>
+        <input type="number" name="total_price" required><br>
+        <label for="status">status:</label>
+          <select name="status">
+            <option value="pending">pending</option>
+            <option value="shipped">shipped</option>
+        </select><br>
+        <label for="shipping_address">shipping_address:</label><br>
+        <input type="text" name="shipping_address" required><br>
+        <button type="submit" name="create">Create</button>
+    </form></body></center></html>

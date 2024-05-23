@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organic_baby_clothing_system</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <style>
+        body {
+            background-image: url('photo/hostimage.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 300px;
+            margin: auto;
+        }
+        .slideshow-container img {
+            display: none;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to organic_baby_clothing_system</h1>
+            <p>Transform your organic_baby_clothing_system with our designs Efficiently</p>
+            <a href="register.html" class="btn">Register</a>
+            <a href="login.html" class="btn">Login</a>
+            <div class="slideshow-container">
+                <img src="./photo/baby.jpg" alt="Baby" style="display: block;">
+                <img src="./photo/ba.webp" alt="Baby">
+                <img src="./photo/kids cloth.jpg" alt="Kids Clothing">
+                <img src="./photo/babyclo.jpg.jpg" alt="Baby Clothing">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-nav">
+            <h3>Main Pages</h3>
+            <ul>
+                <li><a href="homeS.html">Home</a></li>
+                <li><a href="orders.html">Rooms</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: niyitangaemile00@gmail.com</p>
+            <p>Phone: +250781129969</p>
+            <p>Address: 250 Huye, Rwanda</p>
+        </div>
+        <div class="footer-links">
+            <h3>Social Media</h3>
+            <p>For more information visit us through:</p>
+            <ul>
+                <li><a href="https://www.twitter.com/niyitangaemile00@gmail.com">Twitter</a></li>
+                <li><a href="https://www.instagram.com/niyitangaemile00@gmail.com">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var slideIndex = 0;
+    var direction = 1; // 1 for moving right to left, -1 for moving left to right
+
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.querySelector(".slideshow-container").getElementsByTagName("img");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex += direction;
+        if (slideIndex >= x.length) {
+            slideIndex = 0;
+        } else if (slideIndex < 0) {
+            slideIndex = x.length - 1;
+        }
+        x[slideIndex].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+
+        // Adjust direction
+        if (slideIndex === 0 || slideIndex === x.length - 1) {
+            direction *= -1;
+        }
+    }
+</script>
+
+</body>
+</html>

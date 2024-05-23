@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- NIYITANGA Emile 222003205-->
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventory Panel</title>
+</head>
+<body>
+    <h1>inventory Panel</h1>
+    
+    <!-- inventory Registration Form -->
+    <h2>Create inventory</h2>
+    <form method="post" action="landinginventory.php">
+        <label>product_id:</label><br>
+        <input type="number" name="product_id" required><br>
+        <label>quantity_available:</label><br>
+        <input type="number" name="quantity_available" required><br>
+        <label>quantity_sold:</label><br>
+        <input type="number" name="quantity_sold" required><br>
+        <label>reorder_threshold:</label><br>
+        <input type="number" name="reorder_threshold" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User inventory </h2>
+     <form method="post" action="landinginventory.php">
+                    <input type="number" name="inventory_id" placeholder=" New inventory_id">
+                    <input type="number" name="newproduct_id" placeholder="New product_id">
+                    <input type="number" name="newquantity_available" placeholder="New quantity_available">
+                    <input type="number" name="newquantity_sold" placeholder="New quantity_sold">
+                    <input type="number" name="newreorder_threshold" placeholder="New reorder_threshold">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

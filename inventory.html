@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- NIYITANGA Emile 222003205-->
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+    <title> inventory page</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <body bgcolor="yellow">
+</head>
+<body>
+    <h1> inventory page</h1>
+    
+    <!--  inventory Registration Form -->
+    <h2>Create  inventory</h2>
+    <form method="post" action="landinginventory.php">
+        <label>product_id:</label><br>
+        <input type="number" name="product_id" required><br>
+        <label>quantity_available:</label><br>
+        <input type="number" name="quantity_available" required><br>
+        <label>quantity_sold:</label><br>
+        <input type="number" name="quantity_sold" required><br>
+        <label>reorder_threshold:</label><br>
+        <input type="number" name="reorder_threshold" required><br>
+        <button type="submit" name="create">Create</button>
+    </form></body></center></html>

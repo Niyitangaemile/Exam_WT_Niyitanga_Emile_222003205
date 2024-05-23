@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- NIYITANGA Emile 222003205-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organic_baby_clothing</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <style>
+        /* CSS for button */
+        .toggle-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleBackgroundColor()">Toggle Background Color</button>
+    <hr>
+    <h1><u>About us</u></h1>
+
+     <p>Welcome to our organic baby clothing business! We are passionate about providing the best for your little ones while also caring for the environment.  our business was established in 22 january 2023; Here's what sets us apart:</p>
+      <ul>
+        <li><strong>Organic Materials:</strong> All our clothing is made from 100% organic cotton, free from harmful chemicals and pesticides.</li>
+        <li><strong>Sustainable Practices:</strong> We strive to minimize our ecological footprint by using eco-friendly production methods and packaging.</li>
+        <li><strong>Adorable Designs:</strong> Our designs are not only safe and comfortable but also cute and stylish, perfect for your little fashionistas.</li>
+        <li><strong>Commitment to Quality:</strong> We believe in providing the highest quality products that are durable, soft, and gentle on your baby's skin.</li>
+        <li><strong>Supporting Local Communities:</strong> We work closely with local artisans and manufacturers to support fair trade practices and create a positive impact.</li>
+      </ul>
+      <p>Thank you for choosing us to dress your precious little ones in organic goodness. We can't wait to be a part of your baby's journey!</p>
+<center><div> <img src="./photo/baby.jpg" width="700" height="200" alt="babyss">
+       </center>
+       <center><div> <img src="./photo/babyclo.jpg.jpg" width="600" height="200" alt="babyss">
+       </center>
+       <center><div> <img src="./photo/kids cloth.jpg" width="500" height="200" alt="babyss">
+       </center>
+    <script>
+        // JavaScript code to toggle background color
+        var colors = ["#3498db", "#e74c3c", "#9b59b6", "#2ecc71"]; // Array of different colors
+        var colorIndex = 0; // Index to track current color
+
+        function toggleBackgroundColor() {
+            document.body.style.backgroundColor = colors[colorIndex]; // Set the background color
+            colorIndex = (colorIndex + 1) % colors.length; // Move to the next color in the array
+        }
+    </script>
+</body>
+</html>

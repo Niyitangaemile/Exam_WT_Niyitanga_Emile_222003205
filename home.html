@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- NIYITANGA Emile 222003205-->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="logout.php">LOGOUT</a>
+    </div>
+    <main>
+
+ <center><div> <img src="./photo/ba.webp" width="400" height="200" alt="babyss">
+       </center>
+        <section>
+            <center>
+
+                
+                <video width="400" height="200" controls>
+                    <source src="hosts.MP4" type="video/MP4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+            <center>
+                <p>We are a team passionate about providing eco-friendly and organic clothing options for babies and toddlers. Comprised of experts in organic materials and fashion design, we aim to offer high-quality, sustainable, and safe clothing alternatives for the little ones in your life. Our commitment to integrity, transparency, and excellence drives us to deliver user-centric solutions that prioritize comfort, style, and environmental responsibility.</p>
+
+            </center>
+        </section>
+    </main>
+    <script>
+        const colors = ['#ff0000', '#f1f1f1', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#ffA500']; // Added orange color
+        let index = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        }
+//-- NIYITANGA Emile 222003205-->
+        // Change background color every second
+        setInterval(changeBackgroundColor, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users site</title>
+</head>
+<body>
+    <h1>users site</h1>
+    
+    <!-- NIYITANGA Emile 222003205-->
+    <h2>Create users</h2>
+    <form method="post" action="landing.php">
+        <label for="username">Name:</label><br>
+        <input type="text" name="username" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" required><br>
+        <label for="role">Role:</label><br>
+        <input type="text" name="role" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User users </h2>
+     <form method="post" action="landing.php">
+                    <input type="number" name="users_id" placeholder=" New users_id">
+                    <input type="text" name="newusername" placeholder="New username">
+                    <input type="email" name="newemail" placeholder="New email">
+                    <input type="password" name="newpassword" placeholder="New password">
+                    <input type="text" name="newrole" placeholder="New role">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">View</button>
+                  
+                                </form>
+</body>
+</html>

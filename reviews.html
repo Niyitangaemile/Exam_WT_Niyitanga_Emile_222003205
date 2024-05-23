@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- NIYITANGA Emile 222003205-->
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center>
+    <title>reviews page</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <h1>reviews page</h1>
+   <!-- NIYITANGA Emile 222003205-->
+    <!-- reviews Registration Form -->
+    <h2>Create reviews</h2>
+    <form method="post" action="landingreviews.php">
+         <label for="product_id">product_id:</label><br>
+        <input type="number" name="product_id" required><br>
+        <label for="customer_id">customer_id:</label><br>
+        <input type="number" name="customer_id" required><br>
+        <label for="rating">rating:</label><br>
+        <input type="number" name="rating" required><br>
+        <label for="review_text">review_text:</label><br>
+        <input type="text" name="review_text" required><br>
+        <label for="review_date">review_date:</label><br>
+        <input type="date" name="review_date" required><br>
+        <button type="submit" name="create">submit</button>
+    </form></body></center></html>
